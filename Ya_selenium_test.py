@@ -19,13 +19,13 @@ class YandexAuthTestCase(unittest.TestCase):
         login_field = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "passp-field-login"))
         )
-        login_field.send_keys("lenatransx@yandex.ru")
+        login_field.send_keys("ya_login")
         login_field.send_keys(Keys.RETURN)
 
         password_field = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "passp-field-passwd"))
         )
-        password_field.send_keys("RsxPWhVlLKuagl2Ckio6")
+        password_field.send_keys("password")
         password_field.send_keys(Keys.RETURN)
 
         # Проверьте, что вы вошли в систему
